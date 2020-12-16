@@ -1,0 +1,37 @@
+body {
+    background-color: bisque;
+    font-size: 24px;
+}
+
+.container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    grid-template-columns: 30px repeat(7, 1fr);
+    grid-template-rows: 70px 400pc 1fr;
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "sd sd main main main main main main" "ft ft ft ft ft ft ft ft";
+    border: 2px solid red;
+}
+
+.box {
+    width: 250px;
+    height: 150px;
+    border: 2px black;
+}
+
+.header {
+    grid-area: "hd";
+}
+
+.sidebar {
+    grid-area: "sd";
+}
+
+.content {
+    grid-area: "main";
+}
+
+.footer {
+    grid-area: "ft";
+}
