@@ -1,37 +1,57 @@
 body {
-    background-color: bisque;
+    background-color: lightgray;
     font-size: 24px;
 }
 
 .container {
     display: grid;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    margin-top: 150px;
-    grid-template-columns: 30px repeat(7, 1fr);
-    grid-template-rows: 70px 400px 1fr;
-    grid-template-areas: "hd hd hd hd hd hd hd hd" "sd sd main main main main main main" "ft ft ft ft ft ft ft ft";
-    border: 2px solid red;
+    margin-top: 50px;
+    grid-template-columns: 550px;
+    grid-template-rows: 850px 1fr 1fr;
+    grid-template-areas: "hd" "sd" "main" "ft";
+    border: 2px solid #0F2B3D;
+}
+
+#nestedGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border: 2px red;
+    border-radius: 2px;
 }
 
 .box {
-    width: 250px;
-    height: 150px;
-    border: 2px black;
+    border: 5px #017A9B;
+    background: #02B3E4;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .header {
-    grid-area: "hd";
+    grid-area: hd;
 }
 
 .sidebar {
-    grid-area: "sd";
+    grid-area: sd;
 }
 
 .content {
-    grid-area: "main";
+    grid-area: main;
 }
 
 .footer {
-    grid-area: "ft";
+    grid-area: ft;
+}
+
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 160px 600px;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sd sd main main main main main main" "ft ft ft ft ft ft ft ft";
+        border: 2px solid #014052;
+    }
 }
