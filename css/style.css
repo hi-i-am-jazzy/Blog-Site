@@ -1,0 +1,134 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "hd" "side" "main" "ft";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #017A9B;
+}
+
+.logo {
+    color: #2A77AA;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+header nav {
+    flex: 1 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    padding: 0 12px;
+    text-decoration: none;
+    color: #2A77AA;
+    5
+}
+
+button {
+    background-color: #2A77AA;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#subscribe {
+    color: #B2CEE0;
+}
+
+button a {
+    text-decoration: none;
+    color: #E5EFF5;
+}
+
+body {
+    background-color: lightgray;
+    font-size: 24px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+p {
+    font-size: 12px;
+}
+
+#nestedGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#nestedGrid div {
+    background-color: #E5EFF5;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.box {
+    border: 5px #017A9B;
+    background: #B2CEE0;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+header {
+    grid-area: hd;
+}
+
+aside {
+    grid-area: side;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    display: flex;
+    grid-area: ft;
+    font-size: 22px;
+    align-items: center;
+}
+
+footer nav {
+    flex: 1 0;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social ul li {
+    padding: 5px;
+}
+
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "main main main main main main main side" "ft ft ft ft ft ft ft ft";
+    }
+}

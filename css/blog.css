@@ -1,0 +1,68 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 350px 600px 100px;
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "feat feat feat feat feat feat feat feat" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #017A9B;
+}
+
+.logo {
+    color: #2A77AA;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    padding: 0 12px;
+    text-decoration: none;
+    color: #2A77AA;
+    border-right: double;
+}
+
+body {
+    background-color: lightgray;
+    font-size: 24px;
+}
+
+.box {
+    border: 5px #017A9B;
+    background: #B2CEE0;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+header {
+    grid-area: hd;
+}
+
+footer {
+    grid-area: ft;
+    font-size: 14px;
+    text-align: center;
+}
+
+aside {
+    grid-area: feat;
+}
+
+main {
+    grid-area: main;
+}
