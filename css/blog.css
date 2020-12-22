@@ -1,68 +1,42 @@
+@import url('./partials/grid.css');
+@import url('./partials/typography.css');
+@import url('./partials/header.css');
+@import url('./partials/footer.css');
 .container {
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    width: 80%;
+    max-width: 920px;
     margin: auto;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 100px 350px 600px 100px;
-    grid-template-areas: "hd hd hd hd hd hd hd hd" "feat feat feat feat feat feat feat feat" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
+    margin-top: 50px;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas: "hd" "main" "side" "ft";
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #017A9B;
-}
-
-.logo {
-    color: #2A77AA;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 22px;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-header nav ul li a {
-    padding: 0 12px;
-    text-decoration: none;
-    color: #2A77AA;
-    border-right: double;
+button {
+    background-color: #6EA3C5;
+    border: none;
+    border-radius: 8px;
 }
 
 body {
     background-color: lightgray;
-    font-size: 24px;
 }
 
 .box {
     border: 5px #017A9B;
     background: #B2CEE0;
     margin: 5px;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-header {
-    grid-area: hd;
-}
-
-footer {
-    grid-area: ft;
-    font-size: 14px;
-    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
 }
 
 aside {
-    grid-area: feat;
+    grid-area: side;
 }
 
-main {
-    grid-area: main;
+@media(min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 120px 1fr 120px;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "main main main main main main side side" "ft ft ft ft ft ft ft ft";
+    }
 }

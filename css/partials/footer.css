@@ -1,0 +1,22 @@
+footer.box {
+    background: #2A77AA;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer nav {
+    flex: 1 0;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social ul li {
+    padding: 5px;
+}

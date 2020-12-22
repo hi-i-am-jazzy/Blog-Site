@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+}
+
+header.box {
+    background: #2A77AA;
+}
+
+header nav {
+    flex: 1 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    padding: 0 12px;
+}
