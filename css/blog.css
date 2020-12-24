@@ -35,7 +35,7 @@ aside {
 @media(min-width: 900px) {
     .container {
         display: grid;
-        grid-template-columns: 300px 300px 300px;
+        grid-template-columns: 300px 300px 1fr;
         grid-template-rows: 120px 1fr 120px;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "main main main main main main side side" "ft ft ft ft ft ft ft ft";
     }

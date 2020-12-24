@@ -22,14 +22,14 @@ figure {
     margin: 0;
 }
 
-#nestedGrid article {
+#nested-Grid article {
     background-color: #E5EFF5;
     padding: 15px;
     margin: 5px;
     border-radius: 20px;
 }
 
-#nestedGrid article a {
+#nested-Grid article a {
     display: block;
     margin-top: 12px;
 }
