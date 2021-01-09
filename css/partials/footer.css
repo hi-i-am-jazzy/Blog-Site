@@ -15,6 +15,8 @@ footer nav {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    padding: 0;
+    margin: 0;
 }
 
 .social ul li {
